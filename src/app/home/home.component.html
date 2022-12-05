@@ -1,0 +1,100 @@
+
+<div class="container">
+  <header class="header">
+        <div class="user">
+        <i class="fa fa-user-circle-o"></i>
+        <p>user Name</p>
+        <i class="fa fa-sort-down"></i>
+        </div>
+    </header>
+  <div class="banner">
+    <img class="bannerImg" src="assets/banner.jpeg" alt="">
+    <img class="logo" src="assets/logo.jpeg" alt="">
+      <div class="searchdiv">
+        <h1>Find Researchers</h1>
+      <div class="dropdown">
+        <select class="field">
+          <option>Field</option>
+        </select>
+        <select class="round">
+          <option>Research Area</option>
+        </select>
+        <input type="text" class="keyword" placeholder="Keywords">
+      </div>
+      <div class="dropdown">
+        <select class="academic">
+          <option>Academic degree</option>
+        </select>
+        <select class="round">
+          <option>Profession</option>
+        </select>
+        <input type="text" class="institution" placeholder="Institution, Faculty, or University">
+      </div>
+    </div>
+  </div>
+
+  <div class="table_div">
+  <div class="card">
+    <div class="advSearch">
+      <a href=""><i class="fa fa-sliders"></i> Advanced Search</a>
+    </div>
+    <div class="tablecard">
+      <a href="" class="table">Table</a>
+      <a href="" class="cards">Cards</a>
+    </div>
+    <div class="clearsearch">
+      <a href="" class="clear">Clear all</a>
+      <a href="" class="searching">Search</a>
+    </div>
+  </div>
+  <!-- result  -->
+  <div class="results">
+    <h3>Number of results: <span class="num">1042</span>
+    </h3>
+    <div class="export">
+    <i class="fa fa-download"></i>
+    <p>Export</p>
+    <i class="fa fa-envelope-o" style="margin-left: 50px;"></i>
+    <p>Send</p>
+    </div>
+  </div>
+  <div class="general_info">
+    <div class="table_container">
+      <table>
+        <tr>
+          <th><input type="checkbox" class="checkbox"> Name <i class="fa fa-navicon"></i></th>
+          <th>Field</th>
+          <th>Status</th>
+          <th>Availability</th>
+          <th>Research Area</th>
+          <th>Keywords</th>
+        </tr>
+        <tr class="inout_td">
+          <td class="input1_td"><input type="text" name="" class="input1"/> <i class="fa fa-filter icon_color"></i></td>
+          <td class="input2_td"><input type="text" class="input2" name=""/> <i class="fa fa-filter icon_color"></i></td>
+          <td class="input3_td"><input type="text" class="input3" name=""/> <i class="fa fa-filter icon_color"></i></td>
+          <td class="input4_td"><input type="text" class="input4"name=""/> <i class="fa fa-filter icon_color"></i></td>
+          <td class="input5_td"><input type="text" class="input5" name=""/> <i class="fa fa-filter icon_color"></i></td>
+          <td class="input5_td"><input type="text" class="input5" name=""/> <i class="fa fa-filter icon_color"></i></td>
+        </tr>
+        <tr class="tr_color" *ngFor="let item of dataList">
+          <td><input type="checkbox" class="checkbox"><a (click)="onSelect(item)">{{item.name}}</a></td>
+          <td>{{item.academic_degree}}</td>
+          <td><i class="fa fa-check-circle"></i> {{item.contract}}</td>
+          <td><i class="	fa fa-circle-o"></i> {{item.available}}</td>
+          <td>{{item.research_line}}  </td>
+          <td>{{item.keywords}} </td>  
+        </tr>
+      </table>
+
+    </div>
+    <div class="side_line" style="text-align: center;">
+      <span class="material-icons icon_color">filter_alt</span>
+      <span>Columns </span>
+
+       <i class="fa fa-filter icon_color"></i>
+      <span>Filter </span>
+    </div>
+  </div>
+  </div>
+</div>

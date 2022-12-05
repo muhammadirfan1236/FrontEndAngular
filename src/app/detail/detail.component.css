@@ -1,0 +1,362 @@
+ .container{
+  background-color: #f7f7f7;
+}
+.header{
+    height: 60px;
+    width: 100%;
+    background-color: var(--color-blue);
+    display: flex;
+    justify-content: end;
+}
+.user{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+.user i{
+    font-size: 27px;
+    color: var(--color-white);
+}
+.user p{
+    color: var(--color-white);
+    font-size: 20px;
+    margin-left: 15px;
+}
+.header .fa-sort-down{
+    margin-left: 30px;
+    font-size: 24px;
+}
+.logo_container img{
+    width: 14%;
+    margin: 25px 0 0 70px;
+}
+/* personal details  */
+.personal_detail{
+    width: 80%;
+    margin: 20px 10%;
+    display: flex;
+    background-color: var(--color-white);
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px 0px   ;
+}
+.profile_image{
+    flex: 1.4;
+    text-align: center;
+}
+.profile_image img{
+    border-radius: 50%;
+    width: 340px;
+    height: 340px;
+    margin: 8%;
+}
+.personal_det{
+    padding: 4%;
+    flex: 3;
+}
+.available {
+    text-align: end;
+    position: relative;
+}
+.available button{
+    background-color: var(--color-green);
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    color: var(--color-white);
+    padding: 7px 16px;
+    margin: 25px 100px 0 20px ;
+}
+.available i{
+    font-size: 36px;
+    position: absolute;
+    right: 50px;
+    top: 23px;
+    color: #cccccc;
+}
+.name{
+    display: flex;
+    align-items: center;
+}
+.name h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.name .stat{
+    font-size: 20px;
+    margin: 17px 0 0 13px;
+    color: var(--color-gray);
+}
+.name .stat i{
+    color: var(--color-green);
+}
+.name .stat span{
+    margin-left: 10px;
+    color: var(--color-blue);
+}
+.desc p{
+    color: var(--color-gray);
+    margin-top: 20px;
+    font-size: 24px;
+}
+.desc .points{
+    margin: 5px 0;
+}
+.desc .points span{
+    color: var(--color-blue);
+    font-weight: bold;
+} 
+.desc .show{
+    margin-left: 120px;
+    font-size: 18px;
+}
+.desc .fa-sort-down{
+    color: orange;
+    margin-left: 30p;
+}
+.line{
+    width: 90%;
+    margin-top: 15px;
+    height: 1px;
+    background-color: #cccccc;
+}
+.keywords .points{
+    color: var(--color-blue);
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.keywords .p{
+    margin-top: 20px;
+}
+.keywords span{
+    background-color: #f7f7f7;
+    font-size: 20px;
+    padding: 5px 25px;
+    border-radius: 50px;
+    color: var(--color-gray);
+    margin-left:12px ;
+}
+/* general information */
+
+.general_info{
+    width: 80%;
+    margin: 20px 10%;
+    display: flex;
+    height: auto;
+}
+.side_bar{
+    flex: 1;
+}
+.side_bar ul li{
+    list-style-type: none;
+    background-color: var(--color-white);
+    border: 1px solid rgb(229, 229, 229);
+    margin-top: 15px;
+    padding: 8%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 6px 0px;
+    color: var(--color-gray);
+}
+.side_bar li i{
+    margin-right: 8px;
+    font-size: 30px;
+}
+.information{
+    flex: 2.7;
+}
+.information .container1{
+    width: 98%;
+    margin-left: 2%;
+}
+.info{
+    padding: 4% 5%;
+    background-color: var(--color-white);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 6px 0px;
+}
+.info h1{
+    margin-bottom: 20px;
+}
+.list{
+    display: flex;
+}
+.list1{
+    flex: 1;
+}
+.list1,.list2 .points{
+    color: var(--color-gray);
+    margin-top: 5px;
+    font-size: 24px;
+}
+.line1{
+    width: 80%;
+    margin: 5px 0 15px 0;
+    height: 2px;
+    background-color: #cccccc;
+}
+.list2{
+    flex: 1;
+}
+.list1,.list2 span{
+    margin: 5px 0;
+}
+.list1 span{
+    color: var(--color-blue);
+    font-weight: bold;
+} 
+.list2 span{
+    color: var(--color-blue);
+    font-weight: bold;
+} 
+
+/* identifier */
+.identifier,.experience,.research,.education,.product,.transpare,.impact{
+    padding: 4% 5%;
+    margin-top: 15px;
+    background-color: var(--color-white);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 6px 0px;
+    height: auto;
+}
+.identifier{
+     padding-bottom:7%;
+}
+.identifier h1{
+    margin-bottom: 15px;
+}
+.identifier .points{
+    font-size: 20px;
+    float: left;
+}
+.identifier .points span{
+    font-weight: 900;
+    font-size: 24px;
+}
+.identifier i{
+    margin-left: 10px;
+}
+/* experience  */
+.experience{
+    font-size: 24px;
+    width: 90%;
+    line-height: 30px;
+    margin-top: 15px;
+    color: var(--color-gray);
+}
+.experience span{
+    color: var(--color-blue);
+    font-weight: bold;
+}
+.experience h2{
+    color: black;
+    margin-bottom: 20px;
+}
+/* research */
+.research{
+    line-height: 30px;
+    font-size: 24px;
+    width: 90%;
+    margin-top: 15px;
+    color: var(--color-gray);
+}
+.research span{
+    color: var(--color-blue);
+    font-weight: bold;
+}
+.research h2{
+    color: black;
+    margin-bottom: 20px;
+}
+/* education */
+.education{
+    line-height: 30px;
+    font-size: 24px;
+    width: 90%;
+    margin-top: 15px;
+    color: var(--color-gray);
+}
+.education span{
+    color: var(--color-blue);
+    font-weight: bold;
+}
+.education h2{
+    color: black;
+    margin-bottom: 20px;
+}
+/* imapct  */
+.impact h1{
+    margin-bottom: 15px;
+}
+.th1{
+    border-right: 2px solid var(--color-gray);
+}
+.impact table th,td{
+    text-align: left;
+    padding-left: 40px;
+    font-size: 24px;
+    color: var(--color-gray);
+}
+.impact p{
+    margin-bottom: 20px;
+}
+.h120{
+    margin-left: 60px;
+}
+.citas{padding-right: 20px;}
+.h24{margin-left: 20px;}
+.h170{margin-left: 40px;}
+.q3{margin-left: 20px;}
+/* productivity  */
+.product{
+    line-height: 30px;
+    font-size: 24px;
+    width: 90%;
+    margin-top: 15px;
+    color: var(--color-gray);
+}
+.product span{
+    color: var(--color-blue);
+    font-weight: bold;
+}
+.product h2{
+    color: black;
+    margin-bottom: 20px;
+}
+h3{
+    color: var(--color-blue);
+}
+/* transpare  */
+.transpare {
+    width: 90%;
+    margin-top: 15px;
+    position: relative;
+}
+.transpare h1{
+    margin-bottom: 20px;
+}
+.transpare i {
+    margin-left: 10px;
+}
+.transpare .contact{
+    position: absolute;
+    right: -130px;
+    bottom: -30px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    padding:15px 50px;
+
+}
+@media  (max-width: 1366px){
+.profile_image img{
+    width: 240px;
+    height: 240px;
+}
+}
+@media  (max-width: 992px){
+.profile_image img{
+    width: 140px;
+    height: 140px;
+}
+}

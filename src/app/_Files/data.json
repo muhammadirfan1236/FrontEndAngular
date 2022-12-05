@@ -1,0 +1,28 @@
+[ 
+    {     "id": -32366352,
+         "name": "ex enim culpa",
+          "academic_degree": "aliquip dolor quis voluptate nostrud",
+          "profession": "veniam",
+          "institution": "minim proident",
+          "discipline": "Duis ex dolor cup",
+          "contract": true,
+          "available": "disabled",
+          "research_line": "ipsum enim in",
+          "keywords": [ "magna",
+             "culpa amet ullamco aliqua" 
+             ] 
+    },
+    { "id": -66633874,
+         "name": "ex enim",
+         "academic_degree": "aute",
+         "profession": "comm",
+         "institution": "esse laborum elit",
+        "discipline": "enim in eu",
+        "contract": true,
+        "available": "no",
+        "research_line": "sed sit Lorem minim eu",
+        "keywords": [ "nisi esse ex dolor",
+            "est sed veli" 
+     ] 
+     } 
+]

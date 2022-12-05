@@ -1,0 +1,145 @@
+    <div class="container">
+        <!-- header  -->
+    <header class="header">
+        <div class="user">
+        <i class="fa fa-user-circle-o"></i>
+        <p>{{mydata[0].name}}</p>
+        <i class="fa fa-sort-down"></i>
+        </div>
+    </header>
+    <div class="logo_container">
+        <img src="assets/logo.jpeg" alt="">
+    </div>
+    <div class="personal_detail">
+        <div class="profile_image">
+                <img src="assets/profile.jpeg" alt="">
+        </div>
+        <div class="personal_det">
+            <div class="available">
+                <button>Available</button>
+                <i class="fa fa-bookmark" ></i>
+            </div>
+            <div class="name">
+                <div>
+                    <h1>{{mydata[0].name}}</h1>
+                </div>
+                <div class="status">
+                    <p class="stat"> Status <i class="fa fa-check-circle" style="font-size:24px"></i> <span>N" Resolucion: </span>4889</p>
+                </div>
+            </div>
+            <div class="desc">
+                <p>Profesor, Universided de Chile, Faculted de Ciencias</p>
+                <p class="points"><span>Field:</span> Biologia molecular</p>
+                <p class="points"><span>Academic Degree:</span> {{mydata[0].academic_degree }}</p>
+                <p class="points"><span>Research Area:</span> {{mydata[0].research_line}} <span class="show" style="color: orange;">Show more</span> <i class="fa fa-sort-down"></i></p>
+            </div>
+            <div class="line"></div>
+            <div class="keywords">
+                <p class="points">Keywords:</p>
+                <p class="p">
+                    <span  *ngFor="let key of mydata[0].keywords">{{key}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- general information -->
+    <div class="general_info">
+        <div class="side_bar">
+            <ul>
+                <li style="background-color: #1b7bcb; color: white;"><h2><i class="fa fa-user-o"></i> General Information</h2></li>
+                <li><h2><i class="fa fa-search"></i>Research Area</h2></li>
+                <li><h2><i class="fa fa-book"></i> Education</h2></li>
+                <li><h2><i class="fa fa-bar-chart-o"></i> Impact Index</h2></li>
+                <li><h2><i class="fa fa-book"></i> Productivity Index</h2></li>
+                <li><h2><i class="fa fa-external-link"></i> Transparency Data</h2></li>
+            </ul>
+        </div>
+        <div class="information">
+            <div class="container1">
+                <div class="info">
+                    <h1 class="">General Information</h1>
+                    <div class="list">
+                        <div class="list1">
+                            <p class="points"><span>Gender:</span> Femenino</p>
+                                <div class="line1"></div>
+                            <p class="points"><span>Nationality:</span> Chilina</p>
+                                <div class="line1"></div>
+                            <p class="points"><span>RUT:</span> 12.806.965-7</p>
+                                <div class="line1"></div>
+                            <p class="points"><span>Country/Region:</span> Chile,Antofagasta</p>
+                        </div>
+                        <div class="list2">
+                            <p class="points"><span>Address:</span> Los milagros 777,Calama,Antofagasta,chile.</p>
+                                <div class="line1"></div>
+                            <p class="points" style="color: orange;"><span style="color: #1b7bcb;">E-mail:</span> c.urrejola@mail.cl</p>
+                                <div class="line1"></div>
+                            <p class="points" style="color: orange;"><span style="color: #1b7bcb;">RUT:</span> +569 657 456 67</p>
+                        </div>
+                    </div>
+                </div>
+                
+        <!-- identifier  -->
+                <div class="identifier">
+                            <h1 class="">Identifier</h1>
+                            <p class="points" style="color: orange;"><span style="color: #1b7bcb;">ID Scopus:</span> A-7953-2015 <i class="fa fa-external-link"></i> <span style="color: gray; margin:0 25px;">|</span></p>
+                            <p class="points" style="color: orange;"><span style="color: #1b7bcb;">ID Scopus:</span> A-7953-2015 <i class="fa fa-external-link"></i> <span style="color: gray; margin:0 25px;">|</span></p>
+                            <p class="points" style="color: orange;"><span style="color: #1b7bcb;">ID Scopus:</span> A-7953-2015 <i class="fa fa-external-link"></i></p>
+                </div>
+                <!-- experience -->
+                <div class="experience"><br>
+                    <h2>Experience</h2>
+                            <div><span>Informacion cientifica</span><br>Fondo de publicacion de revistas ceintificas chilenas<br>concurso fondo de publicacion de revistas ceintificas chilenas<br>2021<br>
+                        <div class="line1"></div>
+                            scielo-chile<br>convocatoria para indexacion de revistas ceintificas en SciELO-chile<br>2019<br>
+                        <div class="line1"></div>
+                            <span>Fondecyt</span><br>Concurso nacional de proyectos fondecyt regular<br>2018<br>
+                        <div class="line1"></div>
+                            <span>Fondecyt</span><br>Iniciacion en investigacion concurso de proyectos fondecyt de iniciacion en investigacion<br>2017</div>
+                </div>
+                <!-- Research area -->
+                <div class="research">
+                        <h2>Research Area</h2>
+                        <p><span>Area Principle WOS:</span><br>chemistry.analytical;polymer science;chemistry;mutidisciplinary<br>
+                        concurso fondo de publicacion de revistas ceintificas chilenas<br>2021<br>
+                    <div class="line1"></div>
+                        <span>Area Principle OCDE:</span><br>chemical engineering applied catalysis biorefinary related technologies pyrolysis and gasification<br>
+            <!-- education -->
+                </div>
+                <!-- education  -->
+                <div class="education">
+                    <h2>Education And Experience</h2>
+                    <div>
+                        <span>Education</span><br>Ingenierea Quimica,Universidad Central de Las Villas.Cubs,2004<br>Analisis de procesos en la industria Quimica,Universidad Central de Las Villas.Cubs,2006<br>Ingenierea Quimica,Universidad Central de Las Villas.Cubs,2010 <br> 
+                    <div class="line1"></div>
+                    <span>Experincia Academica</span><br>Profesor Auxiliar Full Time;Chemistry And Pharmacy<br>Universidad de Las Villas,Santa Clara,cuba<br>2004-2014 <br>
+                    <div class="line1"></div>
+                    <span>Eperincia profesional</span><br>Investigador Full Time <br>Unidad de Desarrollo Tecnologico concepsion,chle <br>2004-A la fecha
+                </div>
+                </div>
+                    <div class="impact">
+                        <h1>Impact Index</h1>
+                        <table style="width: 90%;">
+                            <tr class="li">
+                                <th class="th1"><p>Factor de impacto</p> <h3 class="h120">120</h3></th>
+                                <th><p>Indice H</p> <h3 class="h24" style="color: orange;">24<i class="fa fa-external-link" style="font-size: 18px;"></i></h3></th>
+                                <th class="th1"><p>publicacions</p> <h3 class="h170">170</h3></th>
+                                <th class="th1 citas"><p>Citas</p> <h3>1500</h3></th>
+                                <th><p>Cuartil</p> <h3 class="q3">Q3</h3></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Productivity -->
+                    <div class="product">
+                        <h2>Productivity Index</h2>
+                        <div><h3>Publicaciones(170)</h3><span><br>Impact of Mn-and-Fe-Doping on electronic and megnetic properties of MoX2 Monolaye</span><br>2020|Acietuno Valenzuela Ur Micol ponce Rosa;Urrejola,cataline <br>WOS SCDO <br><span>Recent advancement in optical biosensor for cancer detection</span><br>2017| Micol ponce Rosa;Urrejola,cataline <br>WOS <br><span>Impact of Mn-and-Fe-Doping on electronic and megnetic properties of MoX2 Monolaye</span> <br>Acietuno Valenzuela Ur Micol ponce Rosa;Urrejola,cataline</div>
+                    </div>
+                    <!-- Transparency -->
+                    <div class="transpare">
+                        <h1>Transparency</h1>
+                        <p><h3>Redsearch y Dataciencia:</h3><br><p style="color: orange;">Search posibble transparency issues <i class="fa fa-external-link"></i></p>
+                        <button class="contact">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
